@@ -36,7 +36,7 @@ class bullet extends JFrame implements ActionListener{
         JMenuItem mi11 = new JMenuItem("New");
         JMenuItem mi12 = new JMenuItem("Open");
         JMenuItem mi13 = new JMenuItem("Save");
-        JMenuItem mi14 = new JMenuItem("Save ASS..");
+        JMenuItem mi14 = new JMenuItem("Save As..");
 
         JMenuItem mi21 = new JMenuItem("Undo");
         JMenuItem mi22 = new JMenuItem("Redo");
