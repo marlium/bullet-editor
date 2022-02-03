@@ -1,0 +1,37 @@
+########################  Changelog ########################
+
+
+v0.01 (Current version) added:
+
+- copy
+- paste
+- cut
+- new file
+- open file
+- save as 
+
+
+v0.02 (next update) features:
+
+- Text Breaker
+- Text Format
+- Settings
+- Hotkeys
+
+
+v0.03 [AK-47 update] features:
+
+- Syntax Highlighting
+- Themes
+- Build in Terminal
+- Line Counter
+- UI Design
+
+
+v0.04 [F-15 update] features:
+
+- Smart Autocomplete
+- File Manager
+- Bullet Installer 
+- Bullet Website
+- More ShortKeys
