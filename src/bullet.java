@@ -96,7 +96,7 @@ class bullet extends JFrame implements ActionListener{
         else if (s.equals("Paste")){
             a.paste();
         }
-        else if (s.equals("Save ASS..")){
+        else if (s.equals("Save As..")){
             JFileChooser fc = new JFileChooser("f:");
             int r = fc.showSaveDialog(null);
             if (r == JFileChooser.APPROVE_OPTION){
