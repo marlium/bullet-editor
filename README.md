@@ -1,6 +1,6 @@
 # bullet by m4rl
 
-A Open-Source, lightweight text-editor writen in Java.
+A Open-Source, lightweight text-editor written in Java.
 
 
 # bullet-editor v0.01
