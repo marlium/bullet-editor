@@ -4,9 +4,12 @@ package bullet;
 
 import java.io.*;
 import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;  
+import java.awt.event.ActionListener;  
 import java.awt.event.KeyEvent;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+
 import javax.swing.*;
 
 class bullet extends JFrame implements ActionListener{
@@ -14,16 +17,18 @@ class bullet extends JFrame implements ActionListener{
     private static JTextArea a;
     private static JFrame f;
     private static int relue = 0;
-    private static boolean p = true; // pushin p
-
+    private static boolean p = true; // pushin p 
+    
 
     public static void main(String args[]){
         bullet b = new bullet();
     }
 
+    
+
     bullet(){
         f = new JFrame("bullet-editor v0.01");
-
+        
         JMenuBar mb = new JMenuBar();
         JMenu m1 = new JMenu("File");
         JMenu m2 = new JMenu("Edit");
@@ -32,11 +37,11 @@ class bullet extends JFrame implements ActionListener{
         JSeparator mis0 = new JSeparator();
         JSeparator mis1 = new JSeparator();
         JSeparator mis2 = new JSeparator();
-
+        
         JMenuItem mi11 = new JMenuItem("New");
         JMenuItem mi12 = new JMenuItem("Open");
         JMenuItem mi13 = new JMenuItem("Save");
-        JMenuItem mi14 = new JMenuItem("Save As..");
+        JMenuItem mi14 = new JMenuItem("Save ASS..");
 
         JMenuItem mi21 = new JMenuItem("Undo");
         JMenuItem mi22 = new JMenuItem("Redo");
@@ -45,8 +50,25 @@ class bullet extends JFrame implements ActionListener{
         JMenuItem mi25 = new JMenuItem("Paste");
         JMenuItem mi26 = new JMenuItem("Find");
 
+        
+        
         a = new JTextArea();
 
+        a.setTabSize(4);
+        a.setLineWrap(true);
+        a.setWrapStyleWord(true);
+
+
+        var td = LocalDateTime.now();
+        var ftd  = DateTimeFormatter.ofPattern("dd.MM HH:mm");
+        var fftd = td.format(ftd);
+
+        String t = "started @ " + fftd;
+        
+        JLabel la0 = new JLabel(" |    ");
+        JLabel la1 = new JLabel(t);
+        
+        
         mi11.addActionListener(this);
         mi12.addActionListener(this);
         mi13.addActionListener(this);
@@ -75,15 +97,17 @@ class bullet extends JFrame implements ActionListener{
         mb.add(m1);
         mb.add(m2);
         mb.add(m3);
+        mb.add(la0);
+        mb.add(la1);
 
-
+        
         f.add(a);
         f.setSize(850,650);
         f.setVisible(p);
         f.setJMenuBar(mb);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-
+    
     public void actionPerformed(ActionEvent e){
         String s = e.getActionCommand();
 
