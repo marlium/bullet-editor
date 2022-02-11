@@ -1,7 +1,7 @@
 ########################  Changelog ########################
 
 
-v0.01 (Current version) added:
+v0.01 (Last verion) added:
 
 - copy
 - paste
@@ -11,7 +11,7 @@ v0.01 (Current version) added:
 - save as 
 
 
-v0.02 (next update) features:
+v0.02 (Current version) features:
 
 - Text Breaker
 - Text Format
