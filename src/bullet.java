@@ -1,4 +1,4 @@
-// bullet text editor v0.01
+// bullet text editor v0.02
 
 package bullet;
 
