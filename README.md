@@ -3,7 +3,7 @@
 A Open-Source, lightweight text-editor written in Java.
 
 
-# bullet-editor v0.03
+# bullet-editor v0.02
 
 
 version 0.01 added features:
